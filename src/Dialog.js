@@ -4,7 +4,6 @@ import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
-import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import ServiceDetails from './serviceDetails';
@@ -58,7 +57,7 @@ export default function CustomizedDialogs() {
   };
 
   return (
-    <div style={{borderRadius:"15px"}}>
+    <div>
       <ServiceDetails handleClick={handleClickOpen} />
       {/* <Button variant="outlined" className="Request" onClick={handleClickOpen}>
        Request
@@ -76,11 +75,10 @@ export default function CustomizedDialogs() {
               <input type="text" id="name" name="name" placeholder="Full Name"></input>
               <input type="email" id="email" name-="email" placeholder="Email"></input>
               <input type="tel" id="phone1" name="phoneno1" placeholder="Phone No."></input>
-              <input type="tel" id="phone2" className="small" name="phoneno2" placeholder="Phone No."></input>
-              <input type="tel" id="phone3" name="phoneno3" className="small" placeholder="Phone No."></input>
               <p>Project Description</p>
               <textarea rows="6" column="50" placeholder="Type here..."></textarea>
-              <div className="buttons"><button style={{ background: "#F2F3FA", color: "#3F4AAF" }}>Cancel</button>
+              <div className="buttons">
+                <button style={{ background: "#F2F3FA", color: "#3F4AAF" }}>Cancel</button>
                 <button style={{ background: "#3F4AAF", color: "#FFFFFF" }}>Request</button>
               </div>
             </form>
