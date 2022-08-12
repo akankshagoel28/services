@@ -1,38 +1,222 @@
-.App {
-  text-align: center;
+.main{
+  /* position:relative; */
+  height:100vh;
+  width:100vw;
+  display:flex;
+  align-items: center;
+  gap:3.0%
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.leftBar{
+height: 100%;
+width: 7.10vw;
+top: 0px;
+border-radius: 0px;
+background: #F2F3FA;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info{
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 16px;
+  align-items: left;
+width: 405px;
+left: 10%;
+top: 20%;
+
+}
+.info h1{
+  font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+margin:0;
+}
+.price{
+  height: 40px;
+width: 103.2785873413086px;
+background: #C7EDD4;
+border-radius: 10px;
+align-content: center;
+font-family: 'Montserrat',sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 17px;
+letter-spacing: 0em;
+border:none;
+}
+.info p{
+font-size: 16px;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+margin-top: 13px;
+margin-bottom: 0;
+}
+.laptop{
+height: 230px;
+width: 330px;
+align-self: center;
+}
+.Request{
+  width: 175px;
+height: 51px;
+background: #3F4AAF;
+border-radius: 10px;
+font-family: 'Montserrat',sans-serif;
+align-content: center;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+color: white;
+border: none;
+margin-top: 12px;
+}
+.Request:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+.rightBar{
+  position: absolute;
+  width: 25.93vw;
+  right: 0%;
+  top: 0%;
+  height: 100vh;
+  background: #F2F3FA;
+}
+.centerBox{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ gap: 68px;
+ align-items: center;
+}
+.xx{
+  overflow:hidden;
+}
+form{
+  width: 534px;
+  height: 559px; 
+  background: #FFFFFF;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Montserrat',sans-serif;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+form h1{ 
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+form p{
+  font-family: 'Montserrat',sans-serif;
+font-size: 10px;
+font-weight: 400;
+line-height: 12px;
+letter-spacing: 0em;
+text-align: left;
+margin-top:24px;
+margin-bottom: 0px;
+}
+input[type=text]{
+width: 464px;
+height: 12px;
+background: #F2F3FA;
+border-radius: 10px;
+border: none;
+padding: 16px 20px;
+}
+form button{
+  width: 111px;
+height: 36px;
+left: 263px;
+top: 496px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+border:none;
+font-family: 'Montserrat',sans-serif;
+font-size: 10px;
+font-weight: 600;
+line-height: 12px;
+letter-spacing: 0em;
+}
+form button:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+.buttons{
+  display: flex;
+  gap: 11px;
+  margin-top:16px;
+  align-items: left;
+}
+input[type=email]{
+width: 464px;
+height: 12px;
+background: #F2F3FA;
+border-radius: 10px;
+border: none;
+padding: 16px 20px;
+}
+.small{
+  width: 226px;
+}
+input[type=tel]{
+width: 464px;
+height: 12px;
+background: #F2F3FA;
+border-radius: 10px;
+border: none;
+padding: 16px 20px;
+}
+textarea:focus, input:focus{
+  outline: none;
+}
+textarea{
+  width: 464px;
+  height: 101px;  
+  background: #F2F3FA;
+  border-radius: 10px;
+  border: none;
+  padding: 12px 20px;
   }
-  to {
-    transform: rotate(360deg);
+  ::placeholder{
+    font-family: 'Montserrat',sans-serif;
+font-size: 10px;
+font-weight: 400;
+line-height: 12px;
+letter-spacing: 0em;
+text-align: left;
   }
+.arrow{
+  width: 23px;
+height: 23px;
+}
+.sideBar{
+  display:flex;
+  flex-direction:column;
+  height: 100vh;
+  width: 7.10vw;
+  align-items: center;
+  
+}
+.logOut{
+  height: 21px;
+width: 21px;
+}
+.home{
+  height: 20px;
+width: 21px;
+}
+.stats{
+  height: 24px;
+width: 22px;
+}
+.clarity{
+  height: 28px;
+width: 28px;
 }
