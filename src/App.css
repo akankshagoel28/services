@@ -356,6 +356,9 @@ padding-top: 9px;
   border-radius: 10px;
   border: none;
 }
+.chat:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
 
 .Bar {
   width: 244px;
